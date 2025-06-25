@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: deepu001/go-web-app
   pullPolicy: IfNotPresent
-  tag: "15853248381"
+  tag: "15877719029"
 
 ingress:
   enabled: false
