@@ -1,91 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepika Mogili | Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
+      header {
+        background-color: #004aad;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
 
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
+      nav ul li {
+        margin: 0 15px;
+      }
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
 
-        main {
-            padding: 20px;
-        }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
 
-        section {
-            margin-bottom: 20px;
-        }
+      main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
-</head>
-<body>
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      section h1,
+      section h2 {
+        color: #004aad;
+      }
+
+      section p {
+        line-height: 1.6;
+      }
+
+      footer {
+        background-color: #004aad;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #004aad;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background-color: #003580;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .project-card {
+        padding: 15px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .project-card a {
+        text-decoration: none;
+        color: #004aad;
+      }
+
+      .project-card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h1> Successfully Deployed on aws eks By Integrating CICD on It </h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
-        </section>
+      <section id="about">
+        <h1>Hi, I'm Deepika Mogili</h1>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
-
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
-        </section>
+        <p>
+          A passionate Full-Stack Developer and DevOps enthusiast. I specialize
+          in building scalable applications and deploying them on cloud
+          platforms using cutting-edge technologies like Kubernetes, AWS, and
+          CI/CD pipelines.
+        </p>
+        <h2>My Skills</h2>
+        <ul>
+          <li>Languages: Go, JavaScript, TypeScript</li>
+          <li>Web Development: React, Node.js, Express.js</li>
+          <li>DevOps Tools: Docker, Kubernetes, Helm, Argo CD</li>
+          <li>Cloud Platforms: AWS (EKS, S3, ECR , ECS)</li>
+          <li>Monitoring: Prometheus, Grafana</li>
+          <li>Version Control: Git, GitHub</li>
+        </ul>
+        <a href="projects" class="btn">Explore My Projects</a>
+        <a href="contact" class="btn">Connect with Me</a>
+        <a href="https://portfolio-teal-rho-64.vercel.app/" class="btn"
+          >Visit My Portfolio</a
+        >
+      </section>
     </main>
 
     <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+      <p>&copy; 2025 Deepika Mogili | Portfolio</p>
     </footer>
-</body>
+  </body>
 </html>

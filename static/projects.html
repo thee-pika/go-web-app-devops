@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn DevOps from Basics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #004aad;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      section h1,
+      section h2 {
+        color: #004aad;
+      }
+
+      section p {
+        line-height: 1.6;
+      }
+
+      .project {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      /* 
+      .project img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 15px;
+      } */
+
+      /* .project-details {
+        max-width: 600px;
+      } */
+      footer {
+        background-color: #004aad;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+
+          <li><a href="projects">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <div class="project-details">
+            <h3>
+              Cloud-Native Deployment of a Golang Application with Kubernetes
+              and GitOps
+            </h3>
+            <p>
+              <strong>Technologies:</strong> AWS EKS, Docker, Kubernetes , Helm,
+              Argo CD , Golang
+            </p>
+            <p>
+              Built a simple Golang application, containerized it with Docker,
+              and pushed the image to Docker Hub. Deployed the application to a
+              Kubernetes cluster with an Ingress Controller for routing traffic.
+              Utilized Helm for efficient deployment configurations and
+              integrated Argo CD for continuous delivery and GitOps. Finally,
+              deployed the setup to AWS EKS for scalable and reliable
+              cloud-based orchestration.
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-details">
+            <h3>Bookeez - Books Reselling Platform</h3>
+            <p>
+              <strong>Technologies:</strong> NextJs , MongoDB , Nodejs, Express
+            </p>
+            <p>
+              Developed a seamless book reselling platform for college students,
+              featuring a user-friendly interface for listing, browsing, and
+              searching books. Integrated secure payment methods to ensure
+              smooth and hassle-free transactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-details">
+            <h3>
+              Mlovvy – A Ticket Booking Application(full-stack web Web
+              Application)
+            </h3>
+            <p>
+              <strong>Technologies:</strong> Nextjs, Prisma, PostgreSql,
+              Nodejs,Express, Socket IO , Redis
+            </p>
+            <p>
+              Designed a movie ticket booking platform for college events with
+              fair seat allocation using a Redis-based queue system. Integrated
+              Razorpay for secure payments and implemented worker processes for
+              first-come, first-serve logic with real-time payment updates via
+              webhooks. Included a review section for upcoming Saturday movie
+              screenings.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Mogili Deepika</p>
+    </footer>
+  </body>
+</html>

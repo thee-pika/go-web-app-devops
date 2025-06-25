@@ -1,68 +1,164 @@
 <Doctype html>
-<html>
+  <html>
     <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+      <title>Projects</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          color: #333;
+        }
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+        header {
+          background-color: #004aad;
+          color: #fff;
+          padding: 20px 0;
+          text-align: center;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+        nav ul li {
+          margin: 0 15px;
+        }
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+        }
 
-            main {
-                padding: 20px;
-            }
+        nav ul li a:hover {
+          text-decoration: underline;
+        }
 
-            section {
-                margin-bottom: 20px;
-            }
+        main {
+          padding: 20px;
+          max-width: 1200px;
+          margin: auto;
+        }
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
+        section {
+          margin-bottom: 30px;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+
+        section h1,
+        section h2 {
+          color: #004aad;
+        }
+
+        section p {
+          line-height: 1.6;
+        }
+
+        footer {
+          background-color: #004aad;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+        footer p {
+          margin: 0;
+        }
+
+        .btn {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 10px 20px;
+          background-color: #004aad;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+        }
+
+        .btn:hover {
+          background-color: #003580;
+        }
+
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+        }
+
+        .project-card {
+          padding: 15px;
+          background-color: #f9f9f9;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          text-align: center;
+        }
+
+        .project-card a {
+          text-decoration: none;
+          color: #004aad;
+        }
+
+        .project-card a:hover {
+          text-decoration: underline;
+        }
+      </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
 
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="projects">
+          <h2>Contact</h2>
+          <p>If you'd like to work together, feel free to reach out to me!</p>
+          <p>
+            Email:
+            <a href="mailto:mogilideepika218@gmail.com"
+              >mogilideepika218@gmail.com</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/deepikamogili468025/"
+              target="_blank"
+              >linkedin.com/in/deepikamogili468025/</a
+            >
+          </p>
+          <p>
+            Twitter:
+            <a href=" https://x.com/theepu_010" target="_blank"
+              >x.com/theepu_010</a
+            >
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 Deepika Mogili | Portfolio</p>
+      </footer>
+    </body>
+  </html>
+</Doctype>
